@@ -1,5 +1,10 @@
+__precompile__()
 module Ska
 
-# Write your package code here.
+export MSID, MSIDset
+
+include("cheta.jl")
+
+import .cheta: MSID, MSIDset
 
 end
