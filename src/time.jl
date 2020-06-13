@@ -15,7 +15,7 @@ struct CxoTime
     end
 end
 
-function CxoTime(t)
+function CxoTime(t::Union{String,Array{Float64,1},Float64})
     ctime = cxotime.CxoTime(t)
     CxoTime(ctime)
 end
